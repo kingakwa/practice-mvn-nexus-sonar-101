@@ -45,3 +45,47 @@ mvn sonar:sonar \
   -Dsonar.projectKey=JavaProject \
   -Dsonar.host.url=http://3.92.198.127:9000 \
   -Dsonar.login=283258f8fc205fc88918a943c72d4f76afe5d582
+
+
+
+
+
+
+Akwa
+creating the different instances whcih are maven-server, nexus-server, sonarqube-server
+moven-server
+- name of the server
+- linux image
+- t2.meduim
+- present keypair
+- use a public vpc, set automatic enable ip
+- security group ssh,
+- add security group (use all traffic and any where)
+
+
+  nexus
+  name
+  use linux image
+  use linux 2
+  t2.mdium
+  present keypair
+  use a public vpc, set automatic enable ip
+  security group ssh
+  add security group (use custom tcp port 8081)
+  advance setting put user data for nexus
+lanch intance
+
+
+sonaqub-sever
+name 
+ubuntu
+use linux 2
+t2.medium
+present key pair or create it
+use a public vpc. set automatic enable IP
+security group ssh
+add security group (use custom tpc port 9000 any where)
+advance setiing put user data for sonarqube
+
+lanch instance
+  
